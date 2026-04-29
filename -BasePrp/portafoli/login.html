@@ -10,7 +10,7 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            background: #0a0010;
+            background: #00060f;
             font-family: 'Rajdhani', 'Segoe UI', sans-serif;
             min-height: 100vh;
             display: flex;
@@ -25,8 +25,8 @@
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
             background:
-                radial-gradient(ellipse at 30% 50%, rgba(180,0,255,0.15) 0%, transparent 60%),
-                radial-gradient(ellipse at 70% 30%, rgba(255,0,255,0.1) 0%, transparent 50%);
+                radial-gradient(ellipse at 30% 50%, rgba(0,170,255,0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 70% 30%, rgba(0,170,255,0.1) 0%, transparent 50%);
             pointer-events: none;
         }
 
@@ -36,7 +36,7 @@
             top: 0; left: 0; right: 0; bottom: 0;
             background: repeating-linear-gradient(
                 0deg, transparent, transparent 2px,
-                rgba(180,0,255,0.02) 2px, rgba(180,0,255,0.02) 4px
+                rgba(0,170,255,0.02) 2px, rgba(0,170,255,0.02) 4px
             );
             pointer-events: none;
         }
@@ -51,8 +51,8 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            border-bottom: 2px solid #b400ff;
-            box-shadow: 0 0 20px rgba(180,0,255,0.4);
+            border-bottom: 2px solid #00aaff;
+            box-shadow: 0 0 20px rgba(0,170,255,0.4);
             z-index: 100;
         }
 
@@ -61,14 +61,14 @@
         .logo {
             width: 52px; height: 52px;
             border-radius: 10px; overflow: hidden;
-            border: 2px solid #b400ff;
-            box-shadow: 0 0 12px #b400ff88;
+            border: 2px solid #00aaff;
+            box-shadow: 0 0 12px #00aaff88;
         }
 
         .logo img { width: 100%; height: 100%; object-fit: cover; }
 
         .facultad h3 {
-            color: #cc44ff; font-size: 0.8rem;
+            color: #00aaff; font-size: 0.8rem;
             letter-spacing: 2px;
             font-family: 'Orbitron', sans-serif;
         }
@@ -76,24 +76,24 @@
         .facultad h2 {
             color: #ffffff; font-size: 1.1rem;
             font-family: 'Orbitron', sans-serif;
-            text-shadow: 0 0 8px #b400ff;
+            text-shadow: 0 0 8px #00aaff;
         }
 
         .nav-menu { display: flex; gap: 1.5rem; }
 
         .nav-menu a {
-            color: #cc44ff; text-decoration: none; font-weight: 700;
+            color: #00aaff; text-decoration: none; font-weight: 700;
             padding: 0.5rem 1.2rem; border-radius: 4px;
-            border: 1px solid #b400ff44;
+            border: 1px solid #00aaff44;
             font-family: 'Orbitron', sans-serif;
             font-size: 0.8rem; letter-spacing: 1px;
             transition: all 0.3s;
         }
 
         .nav-menu a:hover {
-            background: rgba(180,0,255,0.2);
-            color: #ff00ff; border-color: #ff00ff;
-            box-shadow: 0 0 12px #ff00ff66;
+            background: rgba(0,170,255,0.2);
+            color: #00aaff; border-color: #00aaff;
+            box-shadow: 0 0 12px #00aaff66;
         }
 
         /* Login Card */
@@ -106,8 +106,8 @@
             width: 400px;
             text-align: center;
             margin-top: 80px;
-            border: 1px solid #b400ff66;
-            box-shadow: 0 0 40px rgba(180,0,255,0.3), inset 0 0 40px rgba(180,0,255,0.05);
+            border: 1px solid #00aaff66;
+            box-shadow: 0 0 40px rgba(0,170,255,0.3), inset 0 0 40px rgba(0,170,255,0.05);
             overflow: hidden;
         }
 
@@ -115,7 +115,7 @@
             content: '';
             position: absolute;
             top: -2px; left: -2px; right: -2px; bottom: -2px;
-            background: linear-gradient(45deg, #b400ff, #ff00ff, #7700cc, #b400ff);
+            background: linear-gradient(45deg, #00aaff, #00aaff, #0055cc, #00aaff);
             background-size: 400%;
             border-radius: 8px;
             z-index: -1;
@@ -131,25 +131,25 @@
 
         .robot-mini {
             width: 70px; height: 70px;
-            background: linear-gradient(145deg, #7700cc, #b400ff);
+            background: linear-gradient(145deg, #0055cc, #00aaff);
             border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
             margin: 0 auto 1rem;
-            border: 2px solid #ff00ff;
-            box-shadow: 0 0 20px #b400ff88;
+            border: 2px solid #00aaff;
+            box-shadow: 0 0 20px #00aaff88;
         }
 
         .login-card h2 {
-            color: #ff00ff;
+            color: #00aaff;
             font-family: 'Orbitron', sans-serif;
             font-size: 1.1rem;
             letter-spacing: 2px;
             margin-bottom: 0.5rem;
-            text-shadow: 0 0 10px #ff00ff66;
+            text-shadow: 0 0 10px #00aaff66;
         }
 
         .login-card p {
-            color: #9955cc;
+            color: #1166cc;
             margin-bottom: 1.5rem;
             font-size: 0.95rem;
             letter-spacing: 1px;
@@ -157,7 +157,7 @@
 
         .cyber-line {
             height: 1px;
-            background: linear-gradient(90deg, transparent, #b400ff, #ff00ff, #b400ff, transparent);
+            background: linear-gradient(90deg, transparent, #00aaff, #00aaff, #00aaff, transparent);
             margin: 1rem 0;
         }
 
@@ -165,8 +165,8 @@
             width: 100%;
             padding: 12px 16px;
             margin: 8px 0;
-            background: rgba(180,0,255,0.08);
-            border: 1px solid #b400ff66;
+            background: rgba(0,170,255,0.08);
+            border: 1px solid #00aaff66;
             border-radius: 4px;
             font-size: 1rem;
             color: #e0b0ff;
@@ -176,18 +176,18 @@
             letter-spacing: 1px;
         }
 
-        input::placeholder { color: #6633aa; }
+        input::placeholder { color: #0a3a7a; }
 
         input:focus {
-            border-color: #ff00ff;
-            box-shadow: 0 0 12px #ff00ff44;
-            background: rgba(180,0,255,0.15);
+            border-color: #00aaff;
+            box-shadow: 0 0 12px #00aaff44;
+            background: rgba(0,170,255,0.15);
         }
 
         button {
             background: transparent;
-            color: #ff00ff;
-            border: 1px solid #ff00ff;
+            color: #00aaff;
+            border: 1px solid #00aaff;
             padding: 12px;
             width: 100%;
             border-radius: 4px;
@@ -207,15 +207,15 @@
             position: absolute;
             top: 0; left: -100%;
             width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,0,255,0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(0,170,255,0.3), transparent);
             transition: left 0.4s;
         }
 
         button:hover::before { left: 100%; }
 
         button:hover {
-            background: rgba(255,0,255,0.15);
-            box-shadow: 0 0 20px #ff00ff66;
+            background: rgba(0,170,255,0.15);
+            box-shadow: 0 0 20px #00aaff66;
         }
 
         .error {
@@ -249,9 +249,9 @@
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
                 <path d="M12 2C10 2 8 3 8 5H16C16 3 14 2 12 2Z" fill="white"/>
                 <rect x="4" y="5" width="16" height="14" rx="2" fill="white"/>
-                <circle cx="9" cy="10" r="1.5" fill="#b400ff"/>
-                <circle cx="15" cy="10" r="1.5" fill="#b400ff"/>
-                <rect x="11" y="13" width="2" height="4" fill="#b400ff"/>
+                <circle cx="9" cy="10" r="1.5" fill="#00aaff"/>
+                <circle cx="15" cy="10" r="1.5" fill="#00aaff"/>
+                <rect x="11" y="13" width="2" height="4" fill="#00aaff"/>
             </svg>
         </div>
         <h2>ACCESO ADMINISTRADOR</h2>
