@@ -15,7 +15,7 @@
 
         body {
             font-family: 'Rajdhani', 'Segoe UI', sans-serif;
-            background: #0a0010;
+            background: #00060f;
             min-height: 100vh;
             overflow-x: hidden;
         }
@@ -26,9 +26,9 @@
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
             background:
-                radial-gradient(ellipse at 20% 50%, rgba(180, 0, 255, 0.15) 0%, transparent 60%),
-                radial-gradient(ellipse at 80% 20%, rgba(255, 0, 255, 0.1) 0%, transparent 50%),
-                radial-gradient(ellipse at 60% 80%, rgba(120, 0, 200, 0.12) 0%, transparent 50%);
+                radial-gradient(ellipse at 20% 50%, rgba(0,170,255, 0.15) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(0,170,255, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 60% 80%, rgba(0,100,200, 0.12) 0%, transparent 50%);
             pointer-events: none;
             z-index: 0;
         }
@@ -42,8 +42,8 @@
                 0deg,
                 transparent,
                 transparent 2px,
-                rgba(180, 0, 255, 0.02) 2px,
-                rgba(180, 0, 255, 0.02) 4px
+                rgba(0,170,255, 0.02) 2px,
+                rgba(0,170,255, 0.02) 4px
             );
             pointer-events: none;
             z-index: 0;
@@ -60,8 +60,8 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            border-bottom: 2px solid #b400ff;
-            box-shadow: 0 0 20px rgba(180, 0, 255, 0.4), inset 0 -1px 0 #ff00ff44;
+            border-bottom: 2px solid #00aaff;
+            box-shadow: 0 0 20px rgba(0,170,255, 0.4), inset 0 -1px 0 #00aaff44;
         }
 
         .logo-area {
@@ -75,8 +75,8 @@
             height: 52px;
             border-radius: 10px;
             overflow: hidden;
-            border: 2px solid #b400ff;
-            box-shadow: 0 0 12px #b400ff88;
+            border: 2px solid #00aaff;
+            box-shadow: 0 0 12px #00aaff88;
         }
 
         .logo img {
@@ -86,7 +86,7 @@
         }
 
         .facultad h3 {
-            color: #cc44ff;
+            color: #00aaff;
             font-size: 0.8rem;
             letter-spacing: 2px;
             font-family: 'Orbitron', sans-serif;
@@ -96,7 +96,7 @@
             color: #ffffff;
             font-size: 1.1rem;
             font-family: 'Orbitron', sans-serif;
-            text-shadow: 0 0 8px #b400ff;
+            text-shadow: 0 0 8px #00aaff;
         }
 
         .nav-menu {
@@ -105,12 +105,12 @@
         }
 
         .nav-menu a {
-            color: #cc44ff;
+            color: #00aaff;
             text-decoration: none;
             font-weight: 700;
             padding: 0.5rem 1.2rem;
             border-radius: 4px;
-            border: 1px solid #b400ff44;
+            border: 1px solid #00aaff44;
             font-family: 'Orbitron', sans-serif;
             font-size: 0.8rem;
             letter-spacing: 1px;
@@ -124,17 +124,17 @@
             position: absolute;
             top: 0; left: -100%;
             width: 100%; height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(180,0,255,0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(0,170,255,0.3), transparent);
             transition: left 0.4s;
         }
 
         .nav-menu a:hover::before { left: 100%; }
 
         .nav-menu a:hover {
-            background: rgba(180, 0, 255, 0.2);
-            color: #ff00ff;
-            border-color: #ff00ff;
-            box-shadow: 0 0 12px #ff00ff66;
+            background: rgba(0,170,255, 0.2);
+            color: #00aaff;
+            border-color: #00aaff;
+            box-shadow: 0 0 12px #00aaff66;
         }
 
         /* MAIN */
@@ -152,8 +152,8 @@
             backdrop-filter: blur(8px);
             border-radius: 1rem;
             padding: 3rem;
-            border: 1px solid #b400ff66;
-            box-shadow: 0 0 40px rgba(180, 0, 255, 0.2), inset 0 0 60px rgba(180, 0, 255, 0.05);
+            border: 1px solid #00aaff66;
+            box-shadow: 0 0 40px rgba(0,170,255, 0.2), inset 0 0 60px rgba(0,170,255, 0.05);
             position: relative;
             overflow: hidden;
         }
@@ -162,7 +162,7 @@
             content: '';
             position: absolute;
             top: -2px; left: -2px; right: -2px; bottom: -2px;
-            background: linear-gradient(45deg, #b400ff, #ff00ff, #7700cc, #b400ff);
+            background: linear-gradient(45deg, #00aaff, #00aaff, #0055cc, #00aaff);
             background-size: 400%;
             border-radius: 1rem;
             z-index: -1;
@@ -179,20 +179,20 @@
         .robot-icon {
             width: 150px;
             height: 150px;
-            background: linear-gradient(145deg, #7700cc, #b400ff);
+            background: linear-gradient(145deg, #0055cc, #00aaff);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 auto 1.5rem;
-            box-shadow: 0 0 30px rgba(180, 0, 255, 0.7), 0 0 60px rgba(180, 0, 255, 0.3);
+            box-shadow: 0 0 30px rgba(0,170,255, 0.7), 0 0 60px rgba(0,170,255, 0.3);
             animation: float 3s ease-in-out infinite;
-            border: 2px solid #ff00ff;
+            border: 2px solid #00aaff;
         }
 
         @keyframes float {
-            0%, 100% { transform: translateY(0); box-shadow: 0 0 30px rgba(180,0,255,0.7), 0 0 60px rgba(180,0,255,0.3); }
-            50% { transform: translateY(-12px); box-shadow: 0 0 50px rgba(255,0,255,0.9), 0 0 80px rgba(180,0,255,0.5); }
+            0%, 100% { transform: translateY(0); box-shadow: 0 0 30px rgba(0,170,255,0.7), 0 0 60px rgba(0,170,255,0.3); }
+            50% { transform: translateY(-12px); box-shadow: 0 0 50px rgba(0,170,255,0.9), 0 0 80px rgba(0,170,255,0.5); }
         }
 
         .robot-icon svg {
@@ -203,13 +203,13 @@
         h1 {
             font-family: 'Orbitron', sans-serif;
             font-size: 2rem;
-            background: linear-gradient(135deg, #cc44ff, #ff00ff, #b400ff);
+            background: linear-gradient(135deg, #00aaff, #00aaff, #00aaff);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
             margin-bottom: 1rem;
             text-shadow: none;
-            filter: drop-shadow(0 0 10px #b400ff);
+            filter: drop-shadow(0 0 10px #00aaff);
             letter-spacing: 2px;
         }
 
@@ -221,7 +221,7 @@
             content: attr(data-text);
             position: absolute;
             top: 0; left: 0; right: 0;
-            background: linear-gradient(135deg, #cc44ff, #ff00ff, #b400ff);
+            background: linear-gradient(135deg, #00aaff, #00aaff, #00aaff);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
@@ -252,7 +252,7 @@
         }
 
         .descripcion {
-            color: #d4a0ff;
+            color: #a0d4ff;
             font-size: 1.1rem;
             line-height: 1.7;
             max-width: 620px;
@@ -260,8 +260,8 @@
         }
 
         .descripcion strong {
-            color: #ff00ff;
-            text-shadow: 0 0 8px #ff00ff66;
+            color: #00aaff;
+            text-shadow: 0 0 8px #00aaff66;
         }
 
         .badge-container {
@@ -274,28 +274,28 @@
 
         .badge {
             background: transparent;
-            color: #cc44ff;
+            color: #00aaff;
             padding: 0.5rem 1.4rem;
             border-radius: 4px;
             font-size: 0.8rem;
             font-weight: 700;
             font-family: 'Orbitron', sans-serif;
             letter-spacing: 1px;
-            border: 1px solid #b400ff;
-            box-shadow: 0 0 10px #b400ff44, inset 0 0 10px rgba(180,0,255,0.1);
+            border: 1px solid #00aaff;
+            box-shadow: 0 0 10px #00aaff44, inset 0 0 10px rgba(0,170,255,0.1);
             transition: all 0.3s;
         }
 
         .badge:hover {
-            box-shadow: 0 0 20px #ff00ff88, inset 0 0 20px rgba(255,0,255,0.15);
-            color: #ff00ff;
-            border-color: #ff00ff;
+            box-shadow: 0 0 20px #00aaff88, inset 0 0 20px rgba(0,170,255,0.15);
+            color: #00aaff;
+            border-color: #00aaff;
         }
 
         /* Línea decorativa cyber */
         .cyber-line {
             height: 2px;
-            background: linear-gradient(90deg, transparent, #b400ff, #ff00ff, #b400ff, transparent);
+            background: linear-gradient(90deg, transparent, #00aaff, #00aaff, #00aaff, transparent);
             margin: 2rem 0;
             animation: scanline 2s linear infinite;
         }
@@ -311,8 +311,8 @@
             z-index: 1;
             text-align: center;
             padding: 2rem;
-            color: #7733aa;
-            border-top: 1px solid rgba(180, 0, 255, 0.3);
+            color: #0a3a7a;
+            border-top: 1px solid rgba(0,170,255, 0.3);
             margin-top: 2rem;
             font-family: 'Orbitron', sans-serif;
             font-size: 0.75rem;
@@ -403,7 +403,7 @@
         <div class="hero">
             <div class="robot-icon">
     <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <polygon points="13,2 6,14 11,14 11,22 18,10 13,10" fill="#ff00ff"/>
+        <polygon points="13,2 6,14 11,14 11,22 18,10 13,10" fill="#00aaff"/>
         <polygon points="13,2 6,14 11,14 11,22 18,10 13,10" fill="none" stroke="#ffffff" stroke-width="0.5"/>
     </svg>
 </div>
